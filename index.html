@@ -14,17 +14,17 @@ font-family:Roboto,Arial,Helvetica,sans-serif;
 }
 
 body{
-background:#f1f3f4;
+background:linear-gradient(180deg,#e8f5e9,#e3f2fd);
 color:#202124;
 }
 
 /* MAIN CARD */
 .container{
 max-width:920px;
-margin:25px auto;
+margin:20px auto;
 background:#fff;
-border-radius:14px;
-box-shadow:0 10px 35px rgba(0,0,0,.15);
+border-radius:16px;
+box-shadow:0 12px 40px rgba(0,0,0,.15);
 overflow:hidden;
 }
 
@@ -35,6 +35,7 @@ align-items:center;
 gap:10px;
 padding:14px 18px;
 border-bottom:1px solid #e0e0e0;
+background:#fff;
 }
 
 .play-title{
@@ -62,7 +63,7 @@ width:90px;
 height:90px;
 border-radius:22%;
 overflow:hidden;
-background:#25d366;
+background:linear-gradient(135deg,#00c853,#00acc1);
 display:flex;
 align-items:center;
 justify-content:center;
@@ -102,18 +103,20 @@ color:#202124;
 
 /* INSTALL BUTTON */
 .download-btn{
-background:#01875f;
+background:linear-gradient(135deg,#01875f,#00acc1);
 color:#fff;
-padding:12px 42px;
-border-radius:24px;
+padding:13px 44px;
+border-radius:28px;
 border:none;
 font-size:16px;
 font-weight:600;
 cursor:pointer;
-transition:.25s;
+transition:.3s;
+box-shadow:0 6px 18px rgba(0,0,0,.18);
 }
 .download-btn:hover{
-background:#026b4b;
+transform:translateY(-1px);
+opacity:.95;
 }
 
 /* SECTION */
@@ -168,6 +171,35 @@ text-decoration:none;
 .powered a:hover{
 text-decoration:underline;
 }
+
+/* ===================== */
+/* 📱 MOBILE RESPONSIVE */
+/* ===================== */
+@media(max-width:600px){
+
+.header{
+flex-direction:column;
+text-align:center;
+}
+
+.app-icon{
+margin:0 auto;
+}
+
+.badges{
+justify-content:center;
+gap:20px;
+}
+
+.download-btn{
+margin:10px auto 0;
+display:block;
+}
+
+.meta{
+text-align:center;
+}
+}
 </style>
 
 <script>
@@ -184,7 +216,6 @@ window.location.href="https://shyam-matka.club/assets/apkk/shyam-matka.apk";
 
 <!-- GOOGLE PLAY TOP BAR -->
 <div class="play-header">
-  <!-- PLAY STYLE LOGO -->
   <svg width="28" height="28" viewBox="0 0 512 512">
     <defs>
       <linearGradient id="playG" x1="0" y1="0" x2="1" y2="1">
@@ -195,7 +226,6 @@ window.location.href="https://shyam-matka.club/assets/apkk/shyam-matka.apk";
     </defs>
     <polygon points="96,64 416,256 96,448" fill="url(#playG)"/>
   </svg>
-
   <div class="play-title">Google Play</div>
 </div>
 
@@ -218,7 +248,7 @@ window.location.href="https://shyam-matka.club/assets/apkk/shyam-matka.apk";
     </div>
 
     <button class="download-btn" onclick="installApp()">Install</button>
-    <p style="font-size:13px;color:#5f6368;margin-top:6px;">
+    <p style="font-size:13px;color:#5f6368;margin-top:6px;text-align:center;">
       Contains ads · In-app purchases
     </p>
   </div>
@@ -240,7 +270,7 @@ fast results, secure gameplay and unlimited winning opportunities.
 <div class="review-box">
 <div class="review-name">Amit Sharma</div>
 <div class="stars">★★★★★</div>
-<div class="review-text">Best shyam Matka platform. Fast result & smooth gameplay!</div>
+<div class="review-text">Best Shyam Matka platform. Fast result & smooth gameplay!</div>
 </div>
 
 <div class="review-box">
@@ -256,7 +286,6 @@ fast results, secure gameplay and unlimited winning opportunities.
 </div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
 This is a promotional page inspired by Google Play UI.<br>
 We are not affiliated with Google Play.
